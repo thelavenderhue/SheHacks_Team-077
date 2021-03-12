@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kavivanar', cursive;
+}
+
+nav{
+    z-index: 1;
+    background-color: #fff;
+    box-shadow:5px 0px 10px 5px #4d4c4c;
+    height: 65px;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-collapse{
+    background-color: #fff;
+}
+/* 8ae082 */
+.navbar-brand{
+    margin-left: 8%;
+    font-family: 'Flavors', cursive;
+}
+
+nav .navbar-brand{
+    font-size: 33px;
+}
+
+#navbarSupportedContent{
+    margin-left: 2%;
+    margin-right: 8%;
+}
+
+#navbarSupportedContent ul li{
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#navbarSupportedContent ul li a{
+    text-transform: uppercase;
+    text-shadow: #4d4c4c;
+    color: #117393;
+    font-size: 18px;
+    transition: all 0.4s ease-in;
+}
+
+#navbarSupportedContent ul li a:hover{
+    background-color: #117293;
+    color: #8ae082;
+    transition: all 0.2s ease-in;
+} 
+
+
