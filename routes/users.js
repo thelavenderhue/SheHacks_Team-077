@@ -1,7 +1,12 @@
+const { Router } = require("express");
 var express=require("express");
 var router=express.Router();
 var passport=require("passport");
 var User=require("../model/user");
+
+router.get("/", (req, res) => {
+    res.render("home");
+});
 
 router.get('/signup',(req,res)=>{
     res.render('signup');

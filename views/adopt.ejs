@@ -4,4 +4,34 @@
 </head>
 <body>
 <h1>adopt a pet</h1>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome to 4Paw!</h1>
+            <p>Choose your host from all over the world.</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="">Become a host</a>
+            </p>
+        </div>
+    </header>
+
+
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% pets.forEach(function(pet) { %>
+            <div class="col-md-3 col-sm-6">
+                <div class="img-thumbnail">
+                    <img src="<%= pet.image %>" style="width: 100%; height: 100%;">
+                    <div class="caption">
+                        <h4><%= pet.breed %></h4>
+                        <h4><%= pet.ownerName %></h4>
+                        <h4><%= pet.location %></h4>
+                        <h4><%= pet.phoneNum %></h4>
+                        <a class="btn btn-success btn-large" href="">Host Me</a>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+</div>
 <%- include('./partials/footer') %>

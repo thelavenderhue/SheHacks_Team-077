@@ -64,8 +64,47 @@ app.use("/public/images/", express.static("./public/images"));
 
 app.use("/",userRoutes);
 
-app.get("/", (req, res) => {
-  res.render("home");
+// app.get("/", (req, res) => {
+//   res.render("home");
+// });
+
+var petSchema = new mongoose.Schema({
+  ownerName: String,
+  image: String,
+  breed: String,
+  location: String,
+  phoneNum: Number,
+});
+
+var Pet = mongoose.model("Pet", petSchema);
+
+// Pet.create(
+//     {
+//         ownernName: "ABC",
+//         image: "https://www.thesprucepets.com/thmb/F_16ouls0et8Cs8jGVbG9cJo8M4=/1000x1000/smart/filters:no_upscale()/breed_profile_germansheperd_1118000_hero_2536-6dc4ce05871945b8a894bd80c0ecc7f1.jpg",
+//         breed: "German Shepherd",
+//         location: "newLocation1",
+//         phoneNum: 9807706820,
+
+//     }, function(err, pet) {
+//         if(err) {
+//             console.log(err);
+//         }
+//         else {
+//             console.log("newly created host");
+//             console.log(pet);
+//         }
+//     }
+// )
+
+app.get("/adopt", (req, res) => {
+  Pet.find({}, function(err, allPets) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render("adopt", {pets:allPets});
+        }
+    })
 });
 
 app.get("/joinUs", (req, res) => {
@@ -130,10 +169,6 @@ app.post("/uploadmultiple", store.array("images", 12), (req, res, next) => {
       res.json(err);
     })
 })
-
-app.get("/adopt", (req, res) => {
-  res.render("adopt");
-});
 
 
 app.get("/donate", (req, res) => {
