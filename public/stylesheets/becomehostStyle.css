@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.full-height {
+  height: 100%;
+  background-color: #000;
+}
+
+.full {
+  height: 60%;
+  background-color: #2a9d8f;
+  margin: 0 auto;
+  clear: both;
+  display: flex;
+}
+
+.left-text {
+  margin: auto;
+  padding: 70px;
+  vertical-align: middle;
+}
+
+.rightImg {
+  height: 100%;
+  width: 50%;
+  /* float: right; */
+}
+
+.right-picture > img {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+/* body {
+    background-color: #000;
+  } */
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://www.aspcapetinsurance.com/media/1832/11-ways-you-your-pet-can-be-the-perfect-houseguests.jpg);
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://latamlist.com/wp-content/uploads/2018/02/joseph-pearson-378031-unsplash-scaled.jpg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://www.web.com/blog/start/website-design/how-the-right-web-hosting-package-accommodates-all-of-your-pet-s/_jcr_content/root/section/image.coreimg.jpeg/1598275777308/cute-pet-on-laptop.jpeg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://www.petbacker.com/blog/images/2016/essential-guide-dog2.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://lavca.org/wp-content/uploads/2019/04/doghero-lavca-rover.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+/* .no-cssanimations .slideshow li {
+      opacity: 1;
+  } */
