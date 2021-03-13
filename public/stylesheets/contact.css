@@ -1,0 +1,30 @@
+.contact {
+  background-image: url("../images/contact-bg.png");
+  width: 100%;
+  height: 91vh;
+  position: relative;
+  background-size: cover;
+}
+
+body {
+  height: 100%;
+}
+
+.contact-form {
+  padding: 15vh 25px;
+}
+
+.form-row {
+  margin: 20px 0;
+}
+
+.contact-doggo {
+  width: 100%;
+  height: 90%;
+  margin: 60px 0 0 80px;
+}
+
+.text {
+  font-size: 50px;
+  color: #7ebfd4;
+}
