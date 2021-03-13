@@ -1,0 +1,198 @@
+.login-page {
+  /* background-image: url("https://image.freepik.com/free-photo/minimal-background-mock-up-scene-with-podium-product-display-3d-rendering_85046-397.jpg"); */
+  background-image: url("../images/login-bg.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-family: Comfortaa, Cambria, Cochin, Georgia;
+}
+
+.row {
+  margin: 30px auto !important;
+}
+
+input,
+textarea {
+  background-color: #f3e5f5;
+  padding: 12px 15px 12px 15px !important;
+  width: 100%;
+  box-sizing: border-box;
+  border: none !important;
+  border: 1px solid #032d23 !important;
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: 400;
+}
+
+input:focus,
+textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #117393 !important;
+  outline-width: 0;
+  font-weight: 400;
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+.card0 {
+  height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.card1 {
+  width: 50%;
+  /* padding: 40px 30px 10px 30px; */
+  height: 100vh;
+}
+
+.card2 {
+  width: 50%;
+  background-image: url("../images/login.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#logo {
+  /* background-image: url("../images/logo.png");
+  background-size: auto; */
+  padding: 20px;
+  width: 100px;
+}
+
+.heading {
+  margin-bottom: 60px !important;
+}
+
+::placeholder {
+  color: #000 !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+::-ms-input-placeholder {
+  color: #000 !important;
+}
+
+.msg-info {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: -1.34px;
+  color: #032d23;
+}
+
+.welcome {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 44px;
+  letter-spacing: 0.64px;
+  color: #117393;
+}
+
+.no-account {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+  /* identical to box height, or 170% */
+
+  letter-spacing: -0.33px;
+
+  color: #032d23;
+}
+
+#get-started {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  /* identical to box height, or 170% */
+
+  letter-spacing: -0.33px;
+
+  color: #66b75f;
+}
+
+.submit-button {
+  background: #031e2d !important;
+  border-radius: 6px;
+  width: 100%;
+  height: 50px;
+}
+
+.submit-button:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #031e2d, #00235e) !important;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 50px !important;
+}
+
+.sm-text {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .card1 {
+    width: 100%;
+    padding: 40px 30px 10px 30px;
+  }
+
+  .card2 {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px !important;
+  }
+
+  .card2 {
+    padding: 50px;
+  }
+
+  .right {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+}
