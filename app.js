@@ -12,6 +12,7 @@ const express = require("express"),
   { session } = require("passport"),
   User=require("./model/user");
 
+
 const userRoutes = require('./routes/users');
 const app = express();
 require("dotenv").config();
@@ -134,7 +135,6 @@ app.post("/uploadmultiple", store.array("images", 12), (req, res, next) => {
 app.get("/adopt", (req, res) => {
   res.render("adopt");
 });
-
 
 app.get("/donate", (req, res) => {
   res.render("donate");
