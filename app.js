@@ -108,6 +108,30 @@ app.get("/adopt", (req, res) => {
     })
 });
 
+app.get("/findHost", (req, res) => {
+  res.render("adoptForm.ejs");
+});
+
+app.post("/findHost", (req, res) => {
+  var name = req.body.name;
+  var image = req.body.image;
+  var breed = req.body.breed;
+  var location = req.body.location;
+  var phonenum = req.body.phonenum;
+   var newPet = { ownerName: name, breed: breed, image: image, location: location, phoneNum: phonenum};
+   //create new campground and save to DB
+   Pet.create(newPet, function (err, newlyCreated) {
+       if (err) {
+           console.log(err);
+       } else {
+           //redirect back to campgrounds page
+          //  console.log(newlyCreated);
+           res.redirect("/adopt");
+       }
+   
+   });
+});
+
 app.get("/joinUs", (req, res) => {
   res.render("joinUs");
 });

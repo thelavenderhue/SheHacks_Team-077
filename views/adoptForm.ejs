@@ -1,7 +1,9 @@
 <%- include('./partials/header') %>
 
-<link rel="stylesheet" href="/stylesheets/new.css">
+<link rel="stylesheet" href="/stylesheets/adoptForm.css">
 
+</head>
+<body>
 <div class='signup-container'>
     <div class='left-container'>
       <h1>
@@ -15,37 +17,42 @@
     <div class='right-container'>
       <header>
         <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
-        <div class='set'>
-          <div class='pets-name'>
-            <label for='pets-name'>Name</label>
-            <input id='pets-name' placeholder="Pet's name" type='text'>
+        <form action="/findHost" method="POST">
+          <div class='set'>
+            <div class='pets-name'>
+              <label for='pets-name'>Name</label>
+              <input id='pets-name' name="name" placeholder="Pet's name" type='text'>
+            </div>
+  
           </div>
-
-        </div>
-        <div class='set'>
-          <div class='pets-breed'>
-            <label for='pets-breed'>Breed</label>
-            <input id='pets-breed' placeholder="Pet's breed" type='text'>
+          <div class='set'>
+            <div class='pets-breed'>
+              <label for='pets-breed'>Breed</label>
+              <input id='pets-breed' name="breed" placeholder="Pet's breed" type='text'>
+            </div>
+            <div class='pets-photo'>
+              <button id='pets-upload'>
+                <a href="#"><i class='fas fa-camera-retro'></i></a>
+              </button>
+              <label for='pets-upload'>Upload a photo</label>
+            </div>
+            
           </div>
-          <div class='pets-photo'>
-            <button id='pets-upload'>
-              <a href="#"><i class='fas fa-camera-retro'></i></a>
-            </button>
-            <label for='pets-upload'>Upload a photo</label>
+          <div class='set'>
+              <div class='pets-birthday'>
+                  <label for='pets-birthday'>Location</label>
+                  <input id='pets-birthday' name="location" placeholder='Location' type='text'>
+                </div>
+            
           </div>
-          
-        </div>
-        <div class='set'>
-            <div class='pets-birthday'>
-                <label for='pets-birthday'>Location</label>
-                <input id='pets-birthday' placeholder='Location' type='text'>
-              </div>
-          
-        </div>
-        <div class='pets-breed'>
-            <label for='pets-breed'>Phone</label>
-            <input id='pets-breed' placeholder="+91-xxxxxxxxxx" type='text'>
+          <div class='set'>
+            <div class='pets-breed'>
+              <label for='pets-breed'>Phone</label>
+              <input id='pets-breed' name="phonenum" placeholder="+91-xxxxxxxxxx" type='text'>
+            </div>
+            
           </div>
+        </form>
       </header>
       <footer>
         <div class='set'>
