@@ -4,13 +4,42 @@ const express = require("express"),
   bodyParser = require("body-parser"),
   store = require("./middleware/multer"),
   UploadModel = require("./model/schema"),
-  fs = require("fs");
-const { allowedNodeEnvironmentFlags } = require("process");
+  fs = require("fs"),
+{ allowedNodeEnvironmentFlags } = require("process"),
+  flash=require("connect-flash"),
+  passport=require("passport"),
+  LocalStrategy=require("passport-local"),
+  { session } = require("passport"),
+  User=require("./model/user");
 
+const userRoutes = require('./routes/users');
 const app = express();
 require("dotenv").config();
 
+//app.use(session(sessionConfig));
+
+//PASSPORT CONFIGURATION
+app.use(require("express-session")({
+	secret: "Nothing is Greater than LOVE!!!",
+	resave: false,
+	saveUninitialized: false
+}));
+
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+//currentUseradded through each route to show login, logout and signup
+app.use(function(req,res,next){
+	res.locals.currentUser=req.user;
+	res.locals.error= req.flash("error");
+	res.locals.success= req.flash("success");
+	next();
+});
 
 mongoose.set("useUnifiedTopology", true);
 const url = process.env.MONGODB_URI || 3000;
@@ -32,6 +61,8 @@ require('./server/database/database')();
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use("/public/images/", express.static("./public/images"));
+
+app.use("/",userRoutes);
 
 app.get("/", (req, res) => {
   res.render("home");

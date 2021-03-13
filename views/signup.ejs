@@ -1,5 +1,151 @@
 <%- include('./partials/header') %>
-<h1>you hit the signup page</h1>
+
+<link rel="stylesheet" href="/stylesheets/signup.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+  rel="stylesheet"
+/>
+<div class="signup-page">
+  <div class="container px-4 py-5 mx-auto">
+    <div class="card card0">
+      <div class="d-flex flex-lg-row flex-column-reverse">
+        <div class="card card1">
+          <img src="../public/images/logo.png" id="logo" alt="" />
+          <div class="row justify-content-center my-auto">
+            <div class="col-md-8 col-10 my-5 content">
+              <h3 class="welcome">Welcome to 4paw</h3>
+              <h6 class="msg-info">Signup</h6>
+              <form action="/signup" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Email"
+                      required/>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="firstName">Full Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Username</label>
+                  <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Residential Address</label>
+                  <input
+                    type="text"
+                    name="address"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="1234 Main St"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input
+                      type="text"
+                      name="city"
+                      class="form-control"
+                      id="inputCity"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <input
+                      type="text"
+                      name="state"
+                      class="form-control"
+                      id="validationCustom04"
+                      placeholder="State"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <!-- <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" />
+                  </div> -->
+                </div>
+                <div class="form-group"></div>
+                <button type="submit" class="btn btn-primary submit-button">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card card2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    "use strict";
+    window.addEventListener(
+      "load",
+      function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      },
+      false
+    );
+  })();
+</script>
 <%- include('./partials/footer') %>
 
 
