@@ -216,6 +216,36 @@
     opacity: .85;
   }
   
+  /* Icons */
+  .features-icons {
+    background:linear-gradient(rgba(255,255,255, 0.2), rgba(0, 0, 0, 0.2)), url(https://royailekennel.com/wp-content/uploads/2015/06/background-paws-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: rem;
+    padding-bottom: 4rem;
+    margin-bottom: 80px;
+  }
+  
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item p{
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+  }
   
   
   

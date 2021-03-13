@@ -1,0 +1,40 @@
+<%- include('./partials/header') %>
+  <link rel="stylesheet" href="/stylesheets/contact.css">
+  </head>
+
+  <body>
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm contact-form">
+            <div class="text">
+              We would love to hear from you!
+            </div>
+            <form>
+              <div class="form-row">
+                <div class="col-sm">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-sm">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+             <div class="form-row">
+                <div class="col-sm">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+              </div>
+             <div class="form-row">
+                <div class="col-sm">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm">
+            <img src="../public/images/contact-dog.png" class="contact-doggo" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./partials/footer') %>

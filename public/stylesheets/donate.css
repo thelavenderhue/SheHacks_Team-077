@@ -1,0 +1,44 @@
+body {
+  height: 90vh;
+  position: relative;
+  margin: 0 0 !important;
+  padding: 0 0 !important;
+  background-color: black;
+  font-family: "Proza Libre", sans-serif;
+}
+
+.image-dog {
+  height: 100%;
+  width: 100% !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 15%;
+  font-size: 60px;
+  width: 30vw;
+  font-weight: bold;
+  font-variant: small-caps;
+  left: 20px;
+}
+
+.many {
+  color: #117393;
+}
+
+.submit-button {
+  background: #031e2d !important;
+  border-radius: 6px;
+  width: 10vw;
+  height: 50px;
+}
+
+.submit-button:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #36d4ff, #00235e) !important;
+}
