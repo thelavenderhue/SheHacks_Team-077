@@ -2,10 +2,13 @@
 
 body {
   align-items: center;
-  background: #91d18c;
+  background-image: url(../images/2558.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   color: rgba(0, 0, 0, 0.8);
   display: grid;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   justify-items: center;
@@ -13,14 +16,15 @@ body {
 }
 
 .signup-container {
-    margin-top: 5%;
+  margin-top: 5%;
   display: grid;
   grid-template-areas: "left right";
   max-width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left-container {
-  background: #807182;
+  background: #117393;
   overflow: hidden;
   padding: 40px 0 0 0;
   position: relative;
@@ -47,22 +51,22 @@ body {
   text-align: center;
 }
 .left-container .puppy:before {
-  background: #807182;
+  background: #117393;
   content: "";
   height: 100%;
   left: 0;
-  opacity: 0.4;
+  opacity: 0.1;
   position: absolute;
   width: 100%;
   z-index: 1;
 }
 .left-container img {
-  filter: sepia(100%);
+  /* filter: sepia(100%); */
   width: 70%;
 }
 
 .right-container {
-  background: #6db867;
+  background: #5ec556;
   display: grid;
   grid-template-areas: "." ".";
   width: 500px;
@@ -181,11 +185,11 @@ body {
   width: 80px;
 }
 
-.radio-container input[type=radio] {
+.radio-container input[type="radio"] {
   display: none;
 }
 
-.radio-container input[type=radio]:checked + label {
+.radio-container input[type="radio"]:checked + label {
   background: #91d18c;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
