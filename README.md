@@ -44,12 +44,20 @@ node app.js
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## What was our inspiration for '4Paw' ?
 
+We see a lot of stray animals on the streets nowadays, who are either injured or diseased or malnutritioned. 
+According to an estimate of 2018, the population of stray dogs alone in India is around 30–35 million.
+The ongoing lockdown is wreaking havoc on animals and birds that have come to depend on human activity for their subsistence.
+Thousands of stray dogs and cattle in the city, as well as birds like sparrows, crows, pigeons and parrots, are struggling to find food as all of the city’s eateries, including roadside food stalls, have closed down in the wake of the coronavirus outbreak.
+These animals sometimes cause havoc to passersby or the people living in the locality, by picking fights with other animals, making noise or even attacking people. 
+
+We intend to solve these problems through our project, titled ‘4Paw’.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## What Challenges :bulb: did we run into?
 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## If we had more time, what more features would we add to this project ?
+We would add payment gateway for the donate option, and invite more NGOs and organizations to join us for the better good. We will make sure that the people joining us are genuinely wanting to help these animals, by some authentication and verification options.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 ## What Accomplishments are we most proud of?
