@@ -20,10 +20,13 @@ nav{
     background-color: #fff;
 }
 /* 8ae082 */
-.navbar-brand{
-    margin-left: 8%;
+.navbar-brand img{
     height: 30px;
     width: 101.25px;
+    display: inline-block;
+}
+.navbar-brand{
+    margin-left: 8%;
 }
 
 nav .navbar-brand{
