@@ -4,7 +4,7 @@ body {
   margin: 0 0 !important;
   padding: 0 0 !important;
   background-color: black !important;
-  font-family: "Proza Libre", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .image-dog {
@@ -21,7 +21,7 @@ img {
   color: white;
   position: absolute;
   top: 15%;
-  font-size: 60px;
+  font-size: 45px;
   width: 30vw;
   /* font-weight: bold; */
   /* font-variant: small-caps; */

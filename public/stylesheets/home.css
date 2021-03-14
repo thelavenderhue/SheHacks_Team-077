@@ -1,5 +1,9 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:#1d1d1e ;
+}
 .header1 {
-  background-image: url("https://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpghttps://image.freepik.com/free-psd/tropical-foliage-background_53876-91352.jpg");
+  background-image: url("../images/home-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,6 +29,12 @@
   font-weight: bold;
   text-transform: capitalize;
   color: white;
+}
+.header-content h1 span {
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color:#117393;
 }
 
 .header-content p {
