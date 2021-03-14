@@ -21,7 +21,7 @@
             <div class="container section1">
 
             </div>
-            <p class="subtitle">Upload images to the server</p>
+            <p class="subtitle">Upload images of injured animals to help them.</p>
             <div class="row justify-content-center">
                 <div class="col-4">
                     <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
@@ -52,7 +52,7 @@
                             </div> -->
                             <div class="container mt-3 cards">
                                 <div class="row text-center" style="display: flex; flex-wrap: wrap;">
-                                    <div class="col-md-3 col-sm-6"></div>
+                                    <div class="col-md-3 col-sm-6">
                                             <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
                                                 <img style="width: 18rem; height: 9rem;" class="card-img-top" src="data: <%= image.contentType %>;base64,<%= image.imageBase64 %>" alt="Card image cap">
                                                 <div class="card-body">
@@ -60,6 +60,7 @@
                                                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                                 </div>
                                             </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
