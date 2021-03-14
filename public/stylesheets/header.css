@@ -22,7 +22,8 @@ nav{
 /* 8ae082 */
 .navbar-brand{
     margin-left: 8%;
-    font-family: 'Flavors', cursive;
+    height: 30px;
+    width: 101.25px;
 }
 
 nav .navbar-brand{
