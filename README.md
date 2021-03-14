@@ -102,7 +102,7 @@ This site is a collaboration project of :mortar_board::mortar_board: Mrinal, Khu
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Thank you for visiting our Repository
 
-
+### :rocket::rocket: [Watch video of the demo here](https://youtu.be/gUvz4VomfW4)
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
