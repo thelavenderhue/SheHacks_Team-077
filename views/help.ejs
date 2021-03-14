@@ -8,9 +8,20 @@
     <section class="section my-4">
         <div class="container text-center">
             <div class="title py-5">
-                <h1>Node File Uploader</h1>
-                <p class="subtitle">Upload images to the server</p>
+                <h1>We Can't Just Walk Away!</h1>
+                <h3>Help us... Help Them</h3>
+                <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa fa-paw"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
+                
+            </div>
+            <div class="container section1">
+
+            </div>
+            <p class="subtitle">Upload images to the server</p>
             <div class="row justify-content-center">
                 <div class="col-4">
                     <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
@@ -29,7 +40,7 @@
             <section class="mt-5">
                 <div class="row">
                     <% images.forEach(function(image) { %>
-                            <div class="col-3">
+                            <!-- <div class="col-3">
                                 <div class="card shadow" style="width: 18rem;">
                                     <img src="data: <%= image.contentType %>;base64,<%= image.imageBase64 %>" class="card-img-top img-fluid" alt="...">
                                         <div class="card-body">
@@ -37,6 +48,19 @@
                                             <p class="text-secondary font-size-09">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <a href="#" class="btn btn-info font-size-09 text-light">Read More</a>
                                         </div>
+                                </div>
+                            </div> -->
+                            <div class="container mt-3 cards">
+                                <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+                                    <div class="col-md-3 col-sm-6"></div>
+                                            <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
+                                                <img style="width: 18rem; height: 9rem;" class="card-img-top" src="data: <%= image.contentType %>;base64,<%= image.imageBase64 %>" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                     <% }) %>

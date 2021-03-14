@@ -133,10 +133,6 @@ app.post("/findHost", (req, res) => {
    });
 });
 
-app.get("/joinUs", (req, res) => {
-  res.render("joinUs");
-});
-
 app.get("/help", async (req, res) => {
   const all_images = await UploadModel.find();
   res.render("help", { images: all_images });
