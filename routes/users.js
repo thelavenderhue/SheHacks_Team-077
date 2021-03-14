@@ -20,7 +20,7 @@ router.post('/signup',async(req,res,next)=>{
     req.login(registeredUser,err =>{
         if(err) return next(err);
         req.flash('success','Welcome to 4Paw...');
-        res.redirect('/joinUs');
+        res.redirect('/');
     });
     }catch(e){
         req.flash('error',e.message);
@@ -38,7 +38,7 @@ router.post('/login',passport.authenticate("local",
     failureRedirect: "/login"
     }),(req,res)=>{
         req.flash('success','Welcome Back!');
-        const redirectUrl = req.session.returnTo || '/joinUs'
+        const redirectUrl = req.session.returnTo || '/'
         delete req.session.returnTo;
         res.redirect(redirectUrl);
 });
