@@ -72,6 +72,10 @@ input:focus {
     color: #fff;
   }
 
-  h1, h3{
+  h1, h3,p{
     color: #fff;
+  }
+
+  .card-text{
+    color: #000;
   }
